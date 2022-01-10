@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <h1>Preencha sua aposta</h1>
+        <h3>Escolha de 15 a 18 números para apostar. Você ganha acertando 11,12,13 14 ou 15 números. <br>
+            São muitas chances de ganhar, e agora você joga de onde estiver
+        </h3>
+    </header>
+
+    <div class="container">
+
+        <div class="first">
+            <div class="numbers">
+                <input type="text" readonly data-js="visor" style="display: none;">
+                <br>
+                <button data-js="btn-numbers" id="1" class="btn-numbers" value="1">1</button>
+                <button data-js="btn-numbers" id="2" class="btn-numbers" value="2">2</button>
+                <button data-js="btn-numbers" id="3" class="btn-numbers" value="3">3</button>
+                <button data-js="btn-numbers" id="4" class="btn-numbers" value="4">4</button>
+                <button data-js="btn-numbers" id="5" class="btn-numbers" value="5">5</button>
+                <button data-js="btn-numbers" id="6" class="btn-numbers" value="6">6</button>
+                <button data-js="btn-numbers" id="7" class="btn-numbers" value="7">7</button>
+            </div>
+            <div class="numbers">
+                <button data-js="btn-numbers" id="8" class="btn-numbers" value="8">8</button>
+                <button data-js="btn-numbers" id="9" class="btn-numbers" value="9">9</button>
+                <button data-js="btn-numbers" id="10" class="btn-numbers" value="10">10</button>
+                <button data-js="btn-numbers" id="11" class="btn-numbers" value="11">11</button>
+                <button data-js="btn-numbers" id="12" class="btn-numbers" value="12">12</button>
+                <button data-js="btn-numbers" id="13" class="btn-numbers" value="13">13</button>
+                <button data-js="btn-numbers" id="14" class="btn-numbers" value="14">14</button>
+            </div>
+            <div class="numbers">
+                <button data-js="btn-numbers" id="15" class="btn-numbers" value="15">15</button>
+                <button data-js="btn-numbers" id="16" class="btn-numbers" value="16">16</button>
+                <button data-js="btn-numbers" id="17" class="btn-numbers" value="17">17</button>
+                <button data-js="btn-numbers" id="18" class="btn-numbers" value="18">18</button>
+                <button data-js="btn-numbers" id="19" class="btn-numbers" value="19">19</button>
+                <button data-js="btn-numbers" id="20" class="btn-numbers" value="20">20</button>
+                <button data-js="btn-numbers" id="21" class="btn-numbers" value="21">21</button>
+            </div>
+            <div class="numbers">
+                <button data-js="btn-numbers" id="22" class="btn-numbers" value="22">22</button>
+                <button data-js="btn-numbers" id="23" class="btn-numbers" value="23">23</button>
+                <button data-js="btn-numbers" id="24" class="btn-numbers" value="24">24</button>
+                <button data-js="btn-numbers" id="25" class="btn-numbers" value="25">25</button>
+            </div>
+            <div class="operations">
+                <button data-js="btn-complete" class="btn-blue" id=" ">Completar o jogo</button>
+                <button data-js="btn-clean" class="btn-blue" id=" ">Limpar o volante</button>
+                <button data-js="btn-save" class="btn-green" id=" ">Salvar</button>
+            </div>
+        </div>
+
+        <div class="other">
+           
+            <div class="">
+                <h1>Sorteio</h1>
+                <input type="text" data-js="visorResult" class="input" placeholder="Resultado do Sorteio">
+                <button data-js="btn-lotto" class="btn-green">Ok</button>
+                <div data-js="game-result"></div>
+            </div>
+            <div class="">
+                <h1>Apostas feitas</h1>
+                <div data-js="jogo-salvo" id="game-save"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

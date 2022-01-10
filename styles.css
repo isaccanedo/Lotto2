@@ -1,0 +1,110 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h3{
+    margin-bottom: 15px;
+    color: #878787;
+}
+
+.container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.first{
+    width: 550px;
+    text-align: center;
+    display: inline-block;
+}
+.other{
+    width: 400px;
+    text-align: center;
+    margin-bottom: 200px
+}
+
+.btn-numbers{
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 100%;
+    border: none;
+    background-color: #ccc;
+    color: #454545;
+}
+
+h1,p{
+    color: #454545;
+}
+
+button{
+    padding: 15px;
+    background-color: #2664f4;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button.btn-green{
+    background-color: #2bba4a;
+}
+
+.btn-close{
+    padding: 0px;
+    background-color: #fff;
+    color: red;
+    width: 100px;
+    align-self: flex-end;
+}
+
+#game-save{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.numbers{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.operations{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input{
+    width: 15rem;
+    padding: 0.8rem;
+    border-color: black;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#game-save > p{
+    margin: 0;
+}
+
+@media only screen and (max-width: 950px){
+.container {
+    display: grid;
+}
+.first{
+    width: 500px;
+
+}
+.other{
+    width: 400px;
+    margin-bottom: 200px
+}
+}
